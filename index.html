@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Musical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>App de Figuras Musicais</h1>
+    <div class="container">
+        <!-- Card de Semínima -->
+        <div class="card" onclick="tocarSom('audios/semínima.mp3')">
+            <img src="imagens/semínima.png" alt="Figura Semínima">
+            <p>Semínima</p>
+        </div>
+
+        <!-- Card de Colcheia -->
+        <div class="card" onclick="tocarSom('audios/colcheia.mp3')">
+            <img src="imagens/colcheia.png" alt="Figura Colcheia">
+            <p>Colcheia</p>
+        </div>
+
+        <!-- Card de Mínima -->
+        <div class="card" onclick="tocarSom('audios/mínima.mp3')">
+            <img src="imagens/mínima.png" alt="Figura Mínima">
+            <p>Mínima</p>
+        </div>
+    </div>
+
+    <!-- Player de áudio invisível -->
+    <audio id="som"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
